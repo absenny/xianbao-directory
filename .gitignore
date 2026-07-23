@@ -1,0 +1,18 @@
+# 字典数据：按用户要求不发布（本地保留，可继续 rebuild）
+data/dictionaries/
+
+# 生成的静态产物（5.8 万文件，不纳入 git）
+output/
+
+# 生成的清单/统计（可由 build-manifest.js 重新生成）
+data/manifest.json
+data/gen-stats.json
+
+# 部署临时包
+.deploy.zip
+
+# 系统/环境文件
+.user.ini
+
+# 本地临时测试脚本
+_test_content.js

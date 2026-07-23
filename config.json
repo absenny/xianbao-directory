@@ -1,0 +1,14 @@
+{
+  "name": "羊毛日报",
+  "domain": "s.xianbao.fan",
+  "dictId": "shaoyangmao",
+  "tagline": "每天整理真实可参与的电商、外卖、银行与出行优惠，把日常开销省下来。",
+  "extraSeeds": [
+    "云闪付优惠",
+    "数字人民币红包"
+  ],
+  "listingsPerCategory": 6,
+  "longtailPerKeyword": 5,
+  "onDemand": true,
+  "id": ""
+}
