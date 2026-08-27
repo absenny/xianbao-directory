@@ -13,11 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -26,12 +21,10 @@ jobs:
       - name: Install dependencies
         run: |
           pip install requests beautifulsoup4 lxml
-          npm install
 
       - name: Build
         run: |
           python deploy_zhishiku.py
-          node build-all.js
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
