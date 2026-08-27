@@ -23,6 +23,7 @@ jobs:
 
       - name: Build
         run: |
+          mkdir -p data/dictionaries
           node build-all.js
 
       - name: Deploy to gh-pages
