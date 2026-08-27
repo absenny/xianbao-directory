@@ -24,6 +24,8 @@ jobs:
       - name: Build
         run: |
           mkdir -p data/dictionaries
+          git clone --depth 1 https://github.com/tryubma/xianbao-directory.git /tmp/upstream
+          cp -r /tmp/upstream/data/dictionaries/* data/dictionaries/ 2>/dev/null || true
           node build-all.js
 
       - name: Deploy to gh-pages
